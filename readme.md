@@ -1,9 +1,13 @@
 # Scaffi
 The only scaffolding tool you will ever need!
 
+<br>
+
 ## How to install:
 
 npm i -g scaffi
+
+<br>
 
 ## How to use:
 
@@ -17,10 +21,24 @@ npm i -g scaffi
 ## Example:
 `scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Scaffi is the best" --name="custom variable" -t="https://github.com/wolfiesites/scaffi-example-template"`
 
+<br>
+
 
 ## For further explanation use:
 
 ```scaffi --help```
+
+<br>
+
+## Attention:
+<span style="color:red;">Package is new please consider making copy of your template before using template</span>
+
+
+<b>IMPORTANT:</b><br>
+IT WORKS ON UNIX BASED (MAC / LINUX) SYSTEMS WITH BASH INSTALLED<br>
+IF YOU'RE on WINDOWS, Please consider using WSL</b>
+
+<br>
 
 ## How it works:
 1. Scaffi takes placeholders from template: 
@@ -53,14 +71,7 @@ npm i -g scaffi
 * filename
 * variables in files
 
-
-
-<span style="color:red;">Package is new please consider making copy of your template before using template</span>
-
-
-<b>IMPORTANT:</b><br>
-IT WORKS ON UNIX BASED (MAC / LINUX) SYSTEMS WITH BASH INSTALLED<br>
-IF YOU'RE on WINDOWS, Please consider using WSL</b>
+<br>
 
 ## Future features:
 * conditional placeholders with block of code
@@ -68,9 +79,12 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 * feed placeholders with config file.json
 * getting private repos with token auth
 
+<br>
+
 <hr/>
 
-## Smart usecases:
+<br>
+## Smart Usecases:
 ### Please consider using .bashrc / .bashprofile to bend it to your will:
 in `~/.basrhrc` add:
 ```
@@ -78,5 +92,6 @@ newblock() {
 	scaffi --same-value="$*" -t="/your/amazing/template"
 }
 ```
+<small>* --same-value="" replaces all the placeholders with samevalue</small><br><br>
 and use a command in terminal: `newblock my amazing new block`<br>
 your imagination is a key! ;>
