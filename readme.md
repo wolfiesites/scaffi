@@ -14,7 +14,7 @@ npm i -g scaffi
 ```scaffi --placeholder="value of the placeholder" --placetwo="second value" --template="/path/to/repo"```
 
 
-### Example:
+## Example:
 `scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Scaffi is the best" --name="custom variable" -t="https://github.com/wolfiesites/scaffi-example-template"`
 
 
@@ -22,6 +22,29 @@ npm i -g scaffi
 
 ```scaffi --help```
 
+## How it works:
+1. Scaffi takes placeholders: 
+* #{{name}}
+* #{{nameKC}}
+* #{{nameSC}}
+* #{{nameCC}}
+* #{{namePC}}
+* #{{nameSPACE}}
+* #{{yourimaginaryplaceholder}}
+* #{{yourimaginaryplaceholderKC}}
+* #{{yourimaginaryplaceholderSC}}
+* #{{yourimaginaryplaceholderCC}}
+* #{{yourimaginaryplaceholderPC}}
+* #{{yourimaginaryplaceholderSPACE}}
+
+2. defined values for those placholders in flags: --name="awesome scaffi" --yourimaginaryplaceholder="imgainary is good"
+3. takes and converts it to all the cases:
+* KEBAB CASE 							awesome-scaffi		
+* SNAKE CASE 							awesome_scaffi
+* CAMEL CASE 							awesomeScaffi
+* PASCAL CASE 							AwesomeScaffi
+* NORMAL STRING WITH SPACES 			awesome scaffi
+4. values can be either directory / filename / placeholders in file
 
 
 
@@ -35,7 +58,7 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 ## Future features:
 * conditional placeholders with block of code
 * interactive mode
-* feed placeholders with file config
+* feed placeholders with config file.json
 * getting private repos with token auth
 
 <hr/>
@@ -45,7 +68,7 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 in `~/.basrhrc` add:
 ```
 newblock() {
-	scaffi --same-value="$*" -t=""
+	scaffi --same-value="$*" -t="/your/amazing/template"
 }
 ```
 and use a command in terminal: `newblock my amazing new block`<br>
