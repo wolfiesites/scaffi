@@ -3,10 +3,14 @@ The only scaffolding tool you will ever need!
 
 <br>
 
+## Requirements:
+1. bash version 5+
+
 ## How to install:
 ```
 npm i -g scaffi
 ```
+
 
 <br>
 
