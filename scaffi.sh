@@ -102,7 +102,6 @@ function createAllCasesVar() {
 
 function scanForPlaceholdersInFileNames(){
 	files=($(find . -regex ".*/#{{.*}}.*"))
-	echo $files
 	for fileWithPath in "${files[@]}"
 	do
 	    placeholder=$(echo $fileWithPath | sed -E 's|.*\#\{\{(.*)\}\}.*|\1|g' | sed -E 's/PC|SPACE|SC|KC|CC//g')
