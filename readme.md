@@ -30,7 +30,9 @@ scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Sc
 
 ## For further explanation use:
 
-```scaffi --help```
+```
+scaffi --help
+```
 
 <br>
 
@@ -99,5 +101,8 @@ newblock() {
 }
 ```
 <small>* --same-value="" replaces all the placeholders with samevalue</small><br><br>
-and use a command in terminal: `newblock my amazing new block`<br>
-your imagination is a key! ;>
+and use a command in terminal: 
+```
+newblock my amazing new block
+```
+your imagination is a key!
