@@ -37,3 +37,15 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 * interactive mode
 * feed placeholders with file config
 * getting private repos with token auth
+
+<hr/>
+## Smart usecases:
+### Please consider using .bashrc / .bashprofile to bend it to your will:
+in `~/.basrhrc` add:
+```
+newblock() {
+	scaffi --same-value="$*" -t=""
+}
+```
+and use a command in terminal: `newblock my amazing new block`<br>
+your imagination is a key! ;>
