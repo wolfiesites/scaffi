@@ -39,6 +39,7 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 * getting private repos with token auth
 
 <hr/>
+
 ## Smart usecases:
 ### Please consider using .bashrc / .bashprofile to bend it to your will:
 in `~/.basrhrc` add:
