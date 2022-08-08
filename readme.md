@@ -39,6 +39,7 @@ npm i -g scaffi
 
 2. defined values for those placholders in flags:<br> --name="awesome scaffi" --yourimaginaryplaceholder="imgainary is good"
 3. takes and converts it to all the cases:
+
 | suffix|explanation|replacement|
 |--|--|--|
 |KC| KEBAB CASE | 							awesome-scaffi |
@@ -46,7 +47,11 @@ npm i -g scaffi
 |CC| CAMEL CASE | 							awesomeScaffi  |
 |PC| PASCAL CASE  | 							AwesomeScaffi |
 |SPACE| NORMAL STRING WITH SPACES |			awesome scaffi |
-4. values can be either directory / filename / placeholders in file
+
+4. placeholders can be used as:
+* directory
+* filename
+* variables in files
 
 
 
