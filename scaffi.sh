@@ -101,16 +101,17 @@ function createAllCasesVar() {
 }
 
 function scanForPlaceholdersInFileNames(){
-	files=($(find . -regextype sed  -regex ".*/#{{.*}}.*"))
+	files=($(find . -regex ".*/#{{.*}}.*"))
+	echo $files
 	for fileWithPath in "${files[@]}"
 	do
-	    placeholder=$(echo $fileWithPath | sed -E 's|.*\#\{\{(.*)\}\}.*|\1|g' | sed -E 's/PC|SPACE|SC|KC|CC|//g')
+	    placeholder=$(echo $fileWithPath | sed -E 's|.*\#\{\{(.*)\}\}.*|\1|g' | sed -E 's/PC|SPACE|SC|KC|CC//g')
 	    arrayOfVariables+=($placeholder)
 	done
 }
 
 function scanForPlaceholdersInFiles() {
-	placeholders=($(grep --exclude=\*.sh --exclude-dir="node_modules" -Roh '#{{.*}}' .))
+	placeholders=($(grep --exclude-dir="node_modules" -Roh '#{{.*}}' .))
 	for placeholder in "${placeholders[@]}"
 	do
 	    placeholderRdy=$(echo $placeholder  | sed -E 's/PC|CC|SC|KC|SPACE//g' | sed -E 's/#\{\{|\}\}//g' )
@@ -325,7 +326,6 @@ else
 	done
 fi
 
-
 # REPLACE ALL PLACHOLDERS BELOW
 # rename directories
 for placeholders in "${varPLACEHOLDERS[@]}"
@@ -333,7 +333,7 @@ do
 	tmp=(${placeholders[@]})
 	for s in "${tmp[@]}"
 	do
-	    directories=($(find . -type d  -regextype sed -regex ".*#.*}}"))
+	    directories=($(find . -type d -regex ".*#.*}}"))
 	    if [[ ! -z $directories ]]; then
 			for dirWithPath in "${directories[@]}"
 			do
@@ -356,7 +356,7 @@ do
 	tmp=(${placeholders[@]})
 	for s in "${tmp[@]}"
 	do
-	    files=$(find . -type f -regextype sed  -regex ".*/$s.*")
+	    files=$(find . -type f     -regex ".*/$s.*")
 	    if [[ ! -z $files ]]; then
 			for fileWithPath in "${files[@]}"
 			do

@@ -22,6 +22,7 @@
     "scaffi": "./bin/index.js"
   },
   "dependencies": {
+    "scaffi": "^1.0.2",
     "shelljs": "^0.8.5"
   }
 }
