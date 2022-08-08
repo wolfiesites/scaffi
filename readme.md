@@ -15,11 +15,15 @@ npm i -g scaffi
 2. Store it either locally or in repo
 3. use the command below to download template and search replace placeholders:
 
-```scaffi --placeholder="value of the placeholder" --placetwo="second value" --template="/path/to/repo"```
+```
+scaffi --placeholder="value of the placeholder" --placetwo="second value" --template="/path/to/repo"
+```
 
 
 ## Example:
-`scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Scaffi is the best" --name="custom variable" -t="https://github.com/wolfiesites/scaffi-example-template"`
+```
+scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Scaffi is the best" --name="custom variable" -t="https://github.com/wolfiesites/scaffi-example-template"
+```
 
 <br>
 
