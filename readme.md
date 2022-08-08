@@ -8,7 +8,7 @@ npm i -g scaffi
 ## How to use:
 
 1. Create your custom template like this one: https://github.com/wolfiesites/scaffi-example-template
-2. Store it either locally or in repos
+2. Store it either locally or in repo
 3. use the command below to download template and search replace placeholders:
 
 ```scaffi --placeholder="value of the placeholder" --placetwo="second value" --template="/path/to/repo"```
@@ -30,4 +30,10 @@ npm i -g scaffi
 
 <b>IMPORTANT:</b><br>
 IT WORKS ON UNIX BASED (MAC / LINUX) SYSTEMS WITH BASH INSTALLED<br>
-IF YOU'RE on WINDOWS, Please consider installing WSL</b>
+IF YOU'RE on WINDOWS, Please consider using WSL</b>
+
+## future features
+* conditional placeholders with block of code
+* interactive mode
+* feed placeholders with file config
+* getting private repos with token auth
