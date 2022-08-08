@@ -214,7 +214,7 @@ if [[ ! -z $template ]]; then
 	fi
 	if [[ $template =~ https ]]; then
 		templatename='xyz'
-		templatename=$(echo ${template##*/})
+		templatename=$(echo ${template##*/} | sed -E 's/.git//g')
 		git clone $template
 		cp -R $templatename/* .
 		rm -rf $templatename
