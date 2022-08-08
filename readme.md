@@ -4,8 +4,9 @@ The only scaffolding tool you will ever need!
 <br>
 
 ## How to install:
-
+```
 npm i -g scaffi
+```
 
 <br>
 
