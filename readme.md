@@ -32,7 +32,7 @@ npm i -g scaffi
 IT WORKS ON UNIX BASED (MAC / LINUX) SYSTEMS WITH BASH INSTALLED<br>
 IF YOU'RE on WINDOWS, Please consider using WSL</b>
 
-## future features
+## Future features:
 * conditional placeholders with block of code
 * interactive mode
 * feed placeholders with file config
