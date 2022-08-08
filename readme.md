@@ -1,12 +1,17 @@
 # Scaffi
 The only scaffolding tool you will ever need!
 
+## How to install
+
+npm i -g scaffi
+
 ## How to use:
 
 ```scaffi --placeholder="value of the placeholder" --placeholdertwo="value of the second placeholder" --template="/path/to/repo"```
 
 ### Example:
 `scaffi --directory="my awesome dir" --dirtwo="my amazing dir two" --filename="Scaffi is the best" --name="custom variable" -t="https://github.com/wolfiesites/scaffi-example-template"`
+
 
 ## For further explanation use:
 
