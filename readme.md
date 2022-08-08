@@ -83,7 +83,9 @@ IF YOU'RE on WINDOWS, Please consider using WSL</b>
 
 <hr/>
 
-<br>
+<br/>
+
+
 ## Smart Usecases:
 ### Please consider using .bashrc / .bashprofile to bend it to your will:
 in `~/.basrhrc` add:
