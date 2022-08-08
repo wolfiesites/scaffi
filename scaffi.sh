@@ -161,8 +161,8 @@ do
           	echo "How to use:"
           	echo ""
           	echo -e "${YELLOW}scaffi --placholder=\"my awesome value\" --placeholder2=\"my amazing value two\" -t=\"/path/to/my/template\"${NC}"
-          	echo "OR"
-          	echo -e "${YELLOW}scaffi --placholder=\"my awesome value\" --placeholder2=\"my amazing value two\" -t=\"https://github.com/wolfiesites/example-scaffi-template\"${NC}"
+          	echo "EXAMPLE:"
+          	echo -e "${YELLOW}scaffi --directory=\"my awesome dir\" --dirtwo=\"my amazing dir two\" --filename=\"Scaffi is the best\" --name=\"custom variable\" -t=\"https://github.com/wolfiesites/scaffi-example-template\"${NC}"
           	echo ""
           	echo ""
           	echo 'than flags value --placeholder will be tansformed according to case which has been defined in the provided template like:'
