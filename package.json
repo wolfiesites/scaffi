@@ -20,5 +20,8 @@
   },
   "bin": {
     "scaffi": "./bin/index.js"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.5"
   }
 }
